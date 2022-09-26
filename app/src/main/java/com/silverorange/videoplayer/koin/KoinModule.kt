@@ -4,6 +4,7 @@ import android.content.Context
 import android.net.ConnectivityManager
 import com.silverorange.videoplayer.services.WebServices
 import com.silverorange.videoplayer.utilities.Constants
+import com.silverorange.videoplayer.viewModels.MainViewModel
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
@@ -35,4 +36,7 @@ val appModule = module {
 
         retrofit.create(WebServices::class.java)
     }
+
+    //viewModels
+    viewModel { MainViewModel(get()) }
 }

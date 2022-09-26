@@ -6,7 +6,15 @@ import java.io.Serializable
 
 @JsonClass(generateAdapter = true)
 data class Video constructor(
-    @Json(name = "id") val id: Long,
-    //todo TBC
+    val id: String,
+    val title: String,
+    val description: String,
+    @Json(name = "hlsURL") val url: String,
+    val author: Author
 ) : Serializable
+
+@JsonClass(generateAdapter = true)
+data class Author constructor(
+    val name: String
+)
 
