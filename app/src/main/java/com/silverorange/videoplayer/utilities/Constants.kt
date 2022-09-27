@@ -1,7 +1,8 @@
 package com.silverorange.videoplayer.utilities
 
 object Constants {
-    const val BASE_URL = "https://localhost:4000/"
+    // to connect to localhost (if it is used emulator)
+    const val BASE_URL = "http://10.0.2.2:4000/"
 }
 
 

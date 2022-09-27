@@ -26,6 +26,7 @@ open class BaseViewModel : ViewModel() {
                     error.postValue(response.errorBody().toString())
                 }
             } catch (e: Exception) {
+                e.printStackTrace()
                 error.postValue(e.message.toString())
             }
             isLoading.postValue(false)

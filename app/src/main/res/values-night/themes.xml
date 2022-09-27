@@ -15,7 +15,7 @@
     </style>
 
     <style name="Toolbar">
-        <item name="backgroundColor">@color/purple_200</item>
+        <item name="android:background">@color/purple_200</item>
         <item name="android:textColor">@color/black</item>
     </style>
 
